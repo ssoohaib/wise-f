@@ -1,0 +1,18 @@
+@import url('./Vars.css');
+
+#footer{
+    height: 10vh;
+    background-color: var(--table-color);
+}
+
+.footer-container{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-container>p{
+    margin: 0;
+    color: white;
+}

@@ -1,0 +1,30 @@
+:root{
+    /* --blue:#007bff; */
+    --blue:#0A51D3;
+    --ambiance:#EFF4FF;
+    
+
+    
+    --signature:#54BAB9;
+    --primary-bg:black;
+    --secondary-bg:#202124;
+    --table-color:#1E1E21;
+}
+
+div,h1,p,a,i{
+    transition: height .2s, width .2s, font-size .2s, padding .2s, margin .2s, color .2s, background-color .2s;
+}
+
+.under-line{
+    width: 100%;
+    margin: 4rem 0;
+    display: flex;
+    justify-content: center;
+
+}
+
+.under-line>div{
+    width: 200px;
+    height: 1px;
+    border-bottom: 2px solid var(--blue);
+}

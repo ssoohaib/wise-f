@@ -1,0 +1,264 @@
+@import url('./Vars.css');
+
+#converter{
+    height: 100vh;
+    background-color: #202124;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.converter-container{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.converter-left{
+    width: 50%;
+}
+
+.converter-left-container>h1{
+    font-size: 4rem;
+    color: var(--signature);
+    line-height: 1;
+    margin: 0;
+}
+
+.converter-left-container>p{
+    color: white;
+    line-height: 1.5;
+
+}
+
+.converter-left-container>p>span{
+    color: var(--signature);
+}
+
+.converter-left-container>p:nth-child(2){
+    margin: 1.5rem 0;
+}
+
+.converter-left-container>p:nth-child(3){
+    margin: 1.5rem 0 0;
+
+}
+
+.converter-left-container>a{
+    margin: .5rem 0 0;
+    color: var(--signature);
+    text-decoration: underline;
+    text-underline-offset: .3em;
+}
+
+.converter-right{
+    width: 40%;
+    background-color: white;
+    border-radius: 2rem;
+    border-bottom: 10px solid var(--signature);
+    padding: 2rem;
+}
+
+.converter-right-container{
+    width: 100%;
+}
+
+.input-amount-div>label,.amount-get-div>label{
+    margin-bottom: .5rem;
+    font-size: .8rem;
+}
+
+.input-amount-div,.amount-get-div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.input-amount-div>div,.amount-get-div>div{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+}
+
+.input-amount-div>div>input,.amount-get-div>div>input{
+    border-radius: 1rem 0 0 1rem;
+    padding: 1rem;
+    font-size: 1.3rem;
+    width: 100%;
+    border: 1px solid black;
+    border-right: 0;
+
+    
+}
+
+.input-amount-div>div>select,.amount-get-div>div>select{
+    border-radius: 0 1rem 1rem 0;
+    border-left: 0;
+
+    padding: 1rem;
+    font-size: 1.3rem;
+    width: auto;
+    
+}
+
+.converter-right-container>ul{
+    margin: 1rem 0;
+    padding: 0;
+
+}
+
+.converter-right-container>ul>li{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.converter-right-container>ul>li>i{
+    margin-right: .8rem;
+}
+
+.converter-right-container>ul>li>div{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.converter-right-container>ul>li>div>p:nth-child(1){
+    font-weight: 600;
+}
+
+.save-upto>p>span{
+    font-weight: 600;
+}
+
+.converter-btns{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+
+}
+
+.converter-btns>a{
+    margin: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: var(--signature);
+    color: var(--secondary-bg);
+    font-weight: 600;
+    color: white;
+    padding: 1rem;
+    border-radius: 1rem;
+    text-transform: uppercase;
+}
+
+
+@media only screen and (min-width:1401px){
+    .converter-container{
+        width: 70% !important;
+    }
+
+    .converter-left{
+        width: 50%;
+    }
+
+    .converter-right{
+        width: 40%;
+    }
+}
+
+@media only screen and (min-width:1201px){
+    .converter-container{
+        width: 80%;
+    }
+}
+
+@media only screen and (min-width:1025px)and (max-width:1200.99px){
+    .converter-container{
+        width: 85%;
+    }
+}
+
+@media only screen and (min-width:769px)and (max-width: 1024.99px){
+    .converter-container{
+        width: 85%;
+    }
+
+    .converter-left-container{
+        margin-right: 1rem;
+    }
+
+    .converter-left-container>h1{
+        font-size: 3rem;
+    }
+
+    .converter-left-container>p{
+        font-size: 1rem;
+    }
+
+    .converter-left{
+        width: 50%;
+    }
+
+    .converter-right{
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width:481px)and (max-width: 768.99px){
+    #converter{
+        height: auto;
+        padding: 4rem 0;
+    }
+    .converter-container{
+        width: 90%;
+        flex-direction: column;
+    }
+
+    .converter-left{
+        width: 100%;
+        margin-bottom: 4rem;
+    }
+
+    .converter-left-container{
+        margin: 0;
+    }
+
+    .converter-right{
+        width: auto;
+        padding: 2rem;
+    }
+}
+
+@media only screen and (min-width:320px)and (max-width: 480.99px){
+    #converter{
+        height: auto;
+        padding: 4rem 0;
+    }
+    .converter-container{
+        width: 90%;
+        flex-direction: column;
+    }
+
+    .converter-left{
+        width: 100%;
+        margin-bottom: 4rem;
+    }
+
+    .converter-left-container{
+        margin: 0;
+    }
+
+    .converter-left-container>h1{
+        font-size: 3rem;
+    }
+
+    .converter-right{
+        width: auto;
+        padding: 2rem;
+    }
+}

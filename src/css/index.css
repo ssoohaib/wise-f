@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;900&display=swap');
+@import url('./Vars.css');
+
+
+body {
+    margin: 0;
+    /* padding: 0 1rem; */
+    /* background-color: var(--secondary-bg); */
+    font-family: 'Roboto', sans-serif;
+  }
